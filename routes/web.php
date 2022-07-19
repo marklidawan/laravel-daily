@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', view: 'index')->name(name: 'home');
+Route::get('/', 'HomeController@index')->name('home');
 Route::view('/about', view: 'about')->name(name: 'about');
 Route::view('/contact', view: 'contact')->name(name: 'contact');
 
